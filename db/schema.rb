@@ -11,15 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121113222934) do
+ActiveRecord::Schema.define(:version => 20121118161849) do
 
   create_table "employees", :force => true do |t|
     t.string   "employee_name"
     t.string   "employee_email"
     t.string   "location"
     t.string   "department"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "years_with_company"
+    t.string   "manager"
+    t.string   "position"
+    t.string   "group"
   end
 
   create_table "project_requests", :force => true do |t|

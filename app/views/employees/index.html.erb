@@ -4,8 +4,12 @@
   <tr>
     <th>Employee name</th>
     <th>Employee email</th>
-    <th>Location</th>
+    <th>Years with Company</th>
+    <th>Manager/Lead</th>
+    <th>Position</th>
     <th>Department</th>
+    <th>Group</th>
+    <th>Location</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,8 +19,12 @@
   <tr>
     <td><%= employee.employee_name %></td>
     <td><%= employee.employee_email %></td>
-    <td><%= employee.location %></td>
+    <td><%= employee.years_with_company %></td>
+    <td><%= employee.manager %></td>
+    <td><%= employee.position %></td>
     <td><%= employee.department %></td>
+    <td><%= employee.group %></td>
+    <td><%= employee.location %></td>
     <td><%= link_to 'Show', employee %></td>
     <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
     <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
